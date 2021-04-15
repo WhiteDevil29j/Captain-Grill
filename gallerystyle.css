@@ -1,0 +1,234 @@
+:root{
+  --orange:#ff6600;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  font-family:  'Poppins', sans-serif;
+}
+
+h1,h3{
+  font-family:  'Oswald', sans-serif;
+}
+
+*::selection{
+  background: var(--orange);
+  color: white;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  /*height: 200rem;*/
+}
+
+html::-webkit-scrollbar{
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: #333;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--orange);
+}
+
+section{
+  min-height: 100vh;
+  padding: 1rem 10%;
+  padding-top:10.5rem;
+}
+
+.btn{
+  font-size: 1.7rem;
+  padding: .7rem 4rem;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  background: none;
+  color: white;
+  cursor: pointer;
+  border:.2rem solid var(--orange);
+}
+
+.btn:hover{
+  background: var(--orange);
+  color: black;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background:white;
+  padding: 1.5rem 10%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo img{
+  height: 6.5rem;
+}
+
+header .narbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style:none;
+}
+
+header .narbar ul li{
+  margin-left: 4rem;
+}
+
+header .narbar ul li a{
+  font-size: 2rem;
+  color: orange;
+}
+
+header .narbar ul li a.active, header .narbar ul li a:hover{
+  color: black;
+}
+
+header #menu-bar{
+  font-size: 3.5rem;
+  color: orange;
+  cursor: pointer;
+  display: none;
+}
+
+
+#gallery{
+  background: #000;
+}
+
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  padding: 0 .5rem;
+  color: white;   
+}
+
+.heading span{
+  color: var(--orange);
+}
+
+.item img{
+    object-fit: cover;
+    object-position: center;
+}
+
+.item:hover{
+    filter: brightness(70%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media*/
+
+@media (max-width:991px){
+  html{
+    font-size: 56%;
+  }
+
+  .home::before, .home::after{
+    top: 40rem;
+    right: -45rem;
+    height: 40rem;
+    width:120rem;
+  }
+
+  .home::before{
+    top: 35rem;
+  }
+}
+
+@media (max-width: 768px){
+
+  header #menu-bar{
+    display: block;
+  }
+
+  header .narbar{
+    position: fixed;
+    top: 10rem;
+    left: 0;
+    width: 100%;
+    background: #FF8F00;
+    border-top: .2rem solid rgba(0,0,0,0.1);
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+  }
+
+  header .narbar ul{
+    flex-flow: column;
+    padding: 2rem;
+  }
+
+  header .narbar ul li{
+    width: 100%;
+    margin: 1.5rem;
+  }
+  
+  header .narbar ul li a{
+    display: block;
+    color: white;
+    padding-left: 2rem;
+    border-left: .2rem solid white;
+    font-size: 2.3rem;
+  }
+  header .narbar ul li a:hover,header .narbar ul li a.active{
+    color: black;
+    border-color: black;
+  }
+
+  header .narbar.nav-toggle{
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  .home .content{
+    text-align: center;
+  }
+
+  .home .content h3{
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width:500px){
+  html{
+    font-size: 50%;
+  }
+}
+

@@ -1,0 +1,397 @@
+:root{
+  --orange:#ff6600;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all .2s linear;
+  font-family:  'Poppins', sans-serif;
+}
+
+h1,h3{
+  font-family:  'Oswald', sans-serif;
+}
+
+*::selection{
+  background: var(--orange);
+  color: white;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  /*height: 200rem;*/
+}
+
+html::-webkit-scrollbar{
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: #333;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--orange);
+}
+
+section{
+  min-height: 100vh;
+  padding: 1rem 10%;
+  padding-top:10.5rem;
+}
+
+.btn{
+  font-size: 1.7rem;
+  padding: .7rem 4rem;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  background: none;
+  color: white;
+  cursor: pointer;
+  border:.2rem solid var(--orange);
+}
+
+.btn:hover{
+  background: var(--orange);
+  color: white;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background:white;
+  padding: 1.5rem 10%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo img{
+  height: 6.5rem;
+}
+
+header .narbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style:none;
+}
+
+header .narbar ul li{
+  margin-left: 4rem;
+}
+
+header .narbar ul li a{
+  font-size: 2rem;
+  color: orange;
+}
+
+header .narbar ul li a.active, header .narbar ul li a:hover{
+  color: black;
+}
+
+header #menu-bar{
+  font-size: 3.5rem;
+  color: orange;
+  cursor: pointer;
+  display: none;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.home::before,
+.home::after{
+  content: '';
+  position: absolute;
+  top: 5rem;
+  right: -6rem;
+  background:#fff;
+  border-radius: 3rem;
+  transform: rotate(-45deg);
+  height: 40rem;
+  width:70rem;
+  z-index: -2;
+  animation: animte 1s linear 1;
+}
+
+@keyframes animte{
+  0%{
+    transform: rotate(45deg) translateY(-40rem);
+  }
+}
+
+.home::before{
+  top: -2rem;
+  background: var(--orange);
+  box-shadow: 0 1rem 4rem rgba(0,0,0,0.1);
+  z-index: -1;
+}
+
+.home .image{
+  flex: 1 1 30rem;
+}
+
+.home .image img{
+  width: 80%;
+}
+
+.home .content{
+  flex:1 1 39rem;
+}
+
+.home .content h3{
+  color: orange;
+  font-size: 6rem;
+}
+
+.home .content p{
+  color: white;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background:black;
+}
+
+.about .image{
+  flex:1 1 40rem;
+  height: 50rem;
+  background: url('https://i.postimg.cc/kG4tyRWS/about-frame-img.png'), url('https://wallpaperaccess.com/full/826922.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: screen;
+}
+
+.about .content{
+  flex: 1 1 40rem;
+  padding: 2rem;
+}
+
+.about .content h3{
+  font-size: 4rem;
+  color: #ff6600;
+}
+
+.about .content p{
+  font-size: 1.5rem;
+  color:white;
+  padding: 1rem 0%;
+}
+
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  padding: 0 .5rem;
+  color: white;   
+}
+
+.heading span{
+  color: var(--orange);
+}
+
+.order{
+  background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url('https://image.freepik.com/free-photo/wooden-board-empty-table-top-blurred-background_1253-1584.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.order .row{
+  display: flex;
+  background: black;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+.order .row .image{
+  flex: 1 1 40%;
+}
+
+.order .row .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order .row form{
+  flex: 1 1 60%;
+  background: black;
+  padding: 2rem;
+}
+
+.order .row form .box{
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: white;
+  background: #101010;
+  width: 100%;
+}
+
+.order .row form .address{
+  resize: none;
+  height: 15rem;
+}
+
+input{
+  border-radius: 1rem;
+}
+
+textarea{
+  border-radius: 1rem;
+}
+
+.map{
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+
+@media (max-width:991px){
+  html{
+    font-size: 56%;
+  }
+
+  .home::before, .home::after{
+    top: 40rem;
+    right: -45rem;
+    height: 40rem;
+    width:120rem;
+  }
+
+  .home::before{
+    top: 35rem;
+  }
+}
+
+@media (max-width: 768px){
+
+  header #menu-bar{
+    display: block;
+  }
+
+  header .narbar{
+    position: fixed;
+    top: 10rem;
+    left: 0;
+    width: 100%;
+    background: #FF8F00;
+    border-top: .2rem solid rgba(0,0,0,0.1);
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+  }
+
+  header .narbar ul{
+    flex-flow: column;
+    padding: 2rem;
+  }
+
+  header .narbar ul li{
+    width: 100%;
+    margin: 1.5rem;
+  }
+  
+  header .narbar ul li a{
+    display: block;
+    color: white;
+    padding-left: 2rem;
+    border-left: .2rem solid white;
+    font-size: 2.3rem;
+  }
+  header .narbar ul li a:hover,header .narbar ul li a.active{
+    color: black;
+    border-color: black;
+  }
+
+  .fa-times{
+    transform: rotate(180deg);
+  }
+
+  header .narbar.nav-toggle{
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  .home .content{
+    text-align: center;
+  }
+
+  .home .content h3{
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width:500px){
+  html{
+    font-size: 50%;
+  }
+
+  .home::before, .home::after{
+    top: 55rem;
+    right: -15rem;
+    transform: rotate(-40deg);
+    height: 20rem;
+    width:60rem;
+  }
+
+  .home::before{
+    top: 50rem;
+  }
+
+  .order .row .image{
+    display: none;
+  }
+}
