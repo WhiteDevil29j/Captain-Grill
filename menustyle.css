@@ -54,7 +54,7 @@ section{
 
 .btn{
   font-size: 1.7rem;
-  padding: .7rem 4rem;
+  padding: .7rem 1rem;
   border-radius: 5rem;
   margin-top: 1rem;
   background: none;
@@ -124,176 +124,251 @@ header #menu-bar{
 }
 
 .menu{
-    background: black;
+  background: black;
 }
 
 .menu .list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 1rem 0;
-    margin: 2rem 0;
-    border-top: .3rem dashed gray;
-    border-bottom: .3rem dashed gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 1rem 0;
+  margin: 2rem 0;
+  border-top: .3rem dashed gray;
+  border-bottom: .3rem dashed gray;
 }
 
 .menu .list li a{
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .menu .list .btn{
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .menu .list .btn:hover{
-    background: var(--orange);
-    color: white;
+  background: var(--orange);
+  color: white;
 }
 
 .menu .list .btn.active,
 .menu .list .btn:hover{
-    background: var(--orange);
+  background: var(--orange);
 }
 
 .menu .row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .menu .row .image{
-    margin: 2rem;
-    padding: 2rem;
-    flex: 1 1 40rem;
-    border-radius: 1rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 2rem;
+  padding: 2rem;
+  flex: 1 1 40rem;
+  border-radius: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .menu .row .image img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
 .menu .row .content{
-    flex: 1 1 40rem;
+  flex: 1 1 40rem;
 }
 
 .menu .row .content .info{
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 .menu .row .content .info h1{
-    display: flex;
-    align-items: center;
-    font-size: 2.4rem;
-    color: orangered;
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  color: orangered;
 }
 
 .menu .row .content .info h4{
-    font-size: 1.2rem;
-    color: white;
-    font-weight: lighter;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: lighter;
 }
 
 .menu .row .content .info p{
-    color: white;
-    font-size: 1.5rem;
-    padding: .3rem 0;
+  color: white;
+  font-size: 1.5rem;
+  padding: .3rem 0;
 }
 
 .menu .row .content .info p span{
-    float: right;
-    color: yellow;
+  float: right;
+  color: yellow;
 }
 
 .material-icons.md-18{
-    font-size: 18px;
-    position: relative;
-    top: .3rem;
-    color: firebrick;
+  font-size: 18px;
+  position: relative;
+  top: .3rem;
+  color: firebrick;
 }
 
 .top{
-    width: 70px;
-    height: 70px;
-    background-color: rgb(187, 182, 182, 0.7);
-    border-radius: 50%;
-    position: fixed;
-    left: 92%;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    overflow: hidden;
-    z-index: 1;
-    bottom: 0;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(187, 182, 182, 0.7);
+  border-radius: 50%;
+  position: fixed;
+  left: 92%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  overflow: hidden;
+  z-index: 1;
+  bottom: 0;
 }
 
 .top .fa{
-    display: flex;
-    line-height: 70px;
-    justify-content: center;
-    font-size: 2rem;
+  display: flex;
+  line-height: 70px;
+  justify-content: center;
+  font-size: 2rem;
 }
 .top a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .popular{
-    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)), url('https://images.pexels.com/photos/349609/pexels-photo-349609.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)), url('https://images.pexels.com/photos/349609/pexels-photo-349609.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .popular .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .popular .box-container .box{
-    background: black;
-    width: 30rem;
-    padding: 2rem;
-    margin: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 .3rem .5rem rgba(255,255,255,.2);
-    text-align: center;
+  background: black;
+  width: 30rem;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 .3rem .5rem rgba(255,255,255,.2);
+  text-align: center;
 }
 
 .popular .box-container .box img{
-    height: 20rem;
-    width: 100%;
-    object-fit: cover;
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .popular .box-container .box h3{
-    color: var(--orange);
-    font-size: 3rem;
-    font-weight: normal;
-    letter-spacing: .15rem;
+  color: var(--orange);
+  font-size: 3rem;
+  font-weight: normal;
+  letter-spacing: .15rem;
 }
 
 .popular .box-container .box p{
-    color: white;
-    font-size: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .popular .box-container .box .price{
-    color: gold;
-    font-size: 2.5rem;
-    padding-top: 1.5rem;
+  color: gold;
+  font-size: 2.5rem;
+  padding-top: 1.5rem;
 }
 
 .popular .box-container .box:hover{
-    transform: scale(1.02);
-    box-shadow: 0 1rem 1rem rgba(255,255,255,.2);
+  transform: scale(1.02);
+  box-shadow: 0 1rem 1rem rgba(255,255,255,.2);
 }
+
+.footer{
+  background: #282727;
+  padding: 1rem 7%;
+}
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+  flex: 1 1 25rem;
+  margin: 2rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+.footer .box-container .box p{
+  font-size: 1.7rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+  font-size: 1.7rem;
+  color: #eee;
+  padding: 1rem 0;
+  display: block;
+}
+
+.footer .box-container .box a:hover{
+  color: var(--orange);
+}
+
+.footer .box-container .box a i{
+  padding-right: 1rem;
+  color: var(--orange);
+}
+
+.footer .box-container .box p i{
+  padding-right: 1rem;
+  color: var(--orange);
+}
+
+.footer .credit{
+  font-size: 2rem;
+  text-align: center;
+  border-top: .2rem solid rgba(255, 255, 255, 0.7);
+  padding: 2rem 1rem;
+  font-weight: normal;
+  letter-spacing: .1rem;
+  width: 100%;
+  color: white;
+}
+
+.footer .credit span{
+  color: var(--orange);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
