@@ -86,26 +86,6 @@ header .logo img{
   height: 6.5rem;
 }
 
-header .narbar ul{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style:none;
-}
-
-header .narbar ul li{
-  margin-left: 4rem;
-}
-
-header .narbar ul li a{
-  font-size: 2rem;
-  color: orange;
-}
-
-header .narbar ul li a.active, header .narbar ul li a:hover{
-  color: black;
-}
-
 header #menu-bar{
   font-size: 3.5rem;
   color: orange;

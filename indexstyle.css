@@ -168,6 +168,11 @@ header #menu-bar{
   font-size: 6rem;
 }
 
+.home .content h4{
+  color: orange;
+  font-size: 4rem;
+}
+
 .home .content p{
   color: white;
   font-size: 2rem;
